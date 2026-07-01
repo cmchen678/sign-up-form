@@ -1,8 +1,183 @@
 @font-face {
     font-family: 'Norse';
-    src: url('Norse-Bold.woff2') format('woff2'),
-        url('Norse-Bold.woff') format('woff');
+    src: url('fonts/norse-bold/Norse-Bold.woff2') format('woff2'),
+        url('fonts/norse-bold/Norse-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans/OpenSans.woff2') format('woff2'),
+        url('fonts/open-sans/OpenSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans/OpenSans-Semibold.woff2') format('woff2'),
+        url('fonts/open-sans/OpenSans-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+        url('fonts/open-sans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    background: #121212;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    height: 1024px;
+    box-shadow: 
+        0px 0px 15px 2px rgba(0, 168, 89, 0.4),
+        0px 0px 30px 10px rgba(0, 168, 89, 0.2),
+        0px 0px 60px 20px rgba(0, 168, 89, 0.1);
+}
+
+.logo-section {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;;
+    font-family: 'Norse', sans-serif;
+    color: white;
+    width: 60%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    background-color: rgb(0 0 0 / 50%);
+    padding: 0;
+    height: 150px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 96px;
+}
+
+.form-section {
+    background-color: #F9FAFB;
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-header {
+    margin-top: 20%;
+    padding: 0 25% 25px 5%;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.form-main {
+    background-color: white;
+    padding: 0 0 20px 5%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+}
+
+.form-main p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.form-main input {
+    font-size: 16px;
+    height: 1.5em;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding-bottom: 20px;
+}
+
+.input-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-column label {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 2px;
+    font-weight: 600;
+}
+
+
+.form-row label,
+.form-row input {
+    width: 250px;
+}
+
+.form-row input {
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    padding: 5px 10px;
+}
+
+.form-row input:focus {
+    border: 1px solid #2151D9;
+    outline: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-row input:invalid {
+    border: 1px solid #CD5C5C;
+}
+
+.form-row input[type='password']:valid {
+    border: 1px solid #28a745;
+}
+
+.form-footer {
+    padding: 40px 0 50px 5%;
+    font-weight: 600;
+}
+
+.form-footer button {
+    border-radius: 7px;
+    border: none;
+    width: 225px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #596D48;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.form-footer a {
+    text-decoration: none;
+    color: #596D48;
 }
